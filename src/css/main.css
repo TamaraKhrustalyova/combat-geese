@@ -9,7 +9,7 @@
 @import url('./layout/hero.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -21,5 +21,46 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; */
+
+  /* Fonts */
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Inter", sans-serif;
+
+  /* Colors */
+  --light-cl: #fff;
+  --dark-cl: #000;
+  --bt-cl: #E86F54;
+  --bt-cl-hover: #E25B41;
+  --bt-cl-focus: #FA6F54;
+  --mob-menu-bg: #E86F54;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  padding-left: 16px;
+  padding-right: 16px;
+
+  /* outline: 2px solid red;
+    outline-offset: -2px; */
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+      max-width: 768px;
+
+      padding-left: 24px;
+      padding-right: 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+      max-width: 1280px;
+  }
 }
