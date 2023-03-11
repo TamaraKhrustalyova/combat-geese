@@ -1,0 +1,16 @@
+:root {
+  /* Fonts */
+  --primary-font: "Montserrat", sans-serif;
+  --secondary-font: "Inter", sans-serif;
+
+  /* Colors */
+  --light-cl: #fff;
+  --dark-cl: #000;
+  --bt-cl: #E86F54;
+  --bt-cl-hover: #E25B41;
+  --bt-cl-focus: #FA6F54;
+  --mob-menu-bg: #E86F54;
+
+  --trns: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
