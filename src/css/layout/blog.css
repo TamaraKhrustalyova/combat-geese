@@ -18,7 +18,7 @@
   width: 136px;
   height: 181px;
   margin: 0 auto;
-  background-color: grey;
+
   font-size: 58px;
 }
 
@@ -26,7 +26,7 @@
 .my-slick-next {
   position: absolute;
   bottom: -40px;
-  background-color: yellow;
+  background-color: var(--dark-cl);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@
   font-size: 36px;
   line-height: 1;
   border: none;
-  color: tomato;
+  color: var(--dark-cl);
   background-color: transparent;
 }
 
@@ -50,7 +50,7 @@
     left: 250px;
   }
 
-  @media screen and(min-width: 1200px) {
+  @media screen and(min-width: 1280px) {
     left: 350px;
   }
 }
@@ -62,11 +62,21 @@
     right: 250px;
   }
 
-  @media screen and(min-width: 1200px) {
+  @media screen and(min-width: 1280px) {
     right: 350px;
   }
 }
 
-.blog-subtitle {
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
   margin-top: 50px;
+}
+
+.section-title::after {
+  content: '';
+  width: 202px;
+  height: 1px;
+  color: #000;
 }
