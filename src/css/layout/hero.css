@@ -131,3 +131,11 @@
         transform: rotate(0);
     }
 }
+
+/*  only for Codepen  */
+@media screen and (max-height: 800px),
+(max-width: 900px) {
+    :root {
+        zoom: 0.6;
+    }
+}
