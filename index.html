@@ -5,13 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/combat-geese/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
     <title>combat-geese-project</title>
     <link
       rel="stylesheet"
@@ -24,13 +32,13 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
     
-    <script type="module" crossorigin src="/combat-geese/assets/index-bc22dd4f.js"></script>
-    <link rel="stylesheet" href="/combat-geese/assets/index-49044333.css">
+    <script type="module" crossorigin src="/combat-geese/assets/index-c78faf1c.js"></script>
+    <link rel="stylesheet" href="/combat-geese/assets/index-2d95ba52.css">
   </head>
 
   <body>
     <!-- partials -->
-    <header class="page-header">
+    <!-- <header class="page-header">
   <div class="container header">
       <a class="logo" href="">
         <svg class="logo-img" width="72" height="57">
@@ -99,8 +107,8 @@
   </div>
 
 </header>
+ -->
 
-    
     <main>
       
   <section class="hero">
@@ -197,6 +205,7 @@
     <button type="button">Order flowerS</button>
   </div>
 </section> -->
+<!--  -->
 
       <section class="section delivery">
   <div class="container">        
@@ -232,36 +241,111 @@
 
       <section class="section">
   <div class="container">
-
-    <h3 class="title">BLOG</h3>
+    <h3 class="title blog-title">BLOG</h3>
 
     <div class="slick__list responsive list">
       <div class="slick__item">
         <img
           class="slick__box"
-          src="/combat-geese/assets/blog_img_desk_1_390px-f220b73b.jpg"
+          srcset="
+            ../img/blog/blog_img_mob_1_136px.webp  136w,
+            ../img/blog/blog_img_mob_1_272px.webp  272w,
+            ../img/blog/blog_img_desk_1_390px.webp 390w,
+            ../img/blog/blog_img_desk_1_780px.webp 780w,
+            ../img/blog/blog_img_tabl_1_344px.webp 344w,
+            ../img/blog/blog_img_tabl_1_688px.webp 688w
+          "
+          sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px, 100vw"
           alt=""
-          width="136px"
-          height="181px"
+          src="../img/blog/blog_img_desk_1_390px.jpg"
         />
       </div>
       <div class="slick__item">
-        <div class="slick__box">Img2</div>
+        <img
+          class="slick__box"
+          srcset="
+            ../img/blog/blog_img_mob_2_136px.webp  136w,
+            ../img/blog/blog_img_mob_2_272px.webp  272w,
+            ../img/blog/blog_img_desk_2_390px.webp 390w,
+            ../img/blog/blog_img_desk_2_780px.webp 780w,
+            ../img/blog/blog_img_tabl_2_344px.webp 344w,
+            ../img/blog/blog_img_tabl_2_688px.webp 688w
+          "
+          sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px, 100vw"
+          alt=""
+          src="../img/blog/blog_img_desk_2_390px.jpg"
+        />
       </div>
       <div class="slick__item">
-        <div class="slick__box">Img3</div>
+        <img
+          class="slick__box"
+          srcset="
+            ../img/blog/blog_img_mob_3_136px.webp  136w,
+            ../img/blog/blog_img_mob_3_272px.webp  272w,
+            ../img/blog/blog_img_desk_3_390px.webp 390w,
+            ../img/blog/blog_img_desk_3_780px.webp 780w,
+            ../img/blog/blog_img_tabl_3_344px.webp 344w,
+            ../img/blog/blog_img_tabl_3_688px.webp 688w
+          "
+          sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px, 100vw"
+          alt=""
+          src="../img/blog/blog_img_desk_3_390px.jpg"
+        />
       </div>
       <div class="slick__item">
-        <div class="slick__box">Img4</div>
+        <img
+          class="slick__box"
+          srcset="
+            ../img/blog/blog_img_mob_4_136px.webp  136w,
+            ../img/blog/blog_img_mob_4_272px.webp  272w,
+            ../img/blog/blog_img_desk_4_390px.webp 390w,
+            ../img/blog/blog_img_desk_4_780px.webp 780w,
+            ../img/blog/blog_img_tabl_4_344px.webp 344w,
+            ../img/blog/blog_img_tabl_4_688px.webp 688w
+          "
+          sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px, 100vw"
+          alt=""
+          src="../img/blog/blog_img_desk_4_390px.jpg"
+        />
       </div>
       <div class="slick__item">
-        <div class="slick__box">img5</div>
+        <img
+          class="slick__box"
+          srcset="
+            ../img/blog/blog_img_mob_5_136px.webp  136w,
+            ../img/blog/blog_img_mob_5_272px.webp  272w,
+            ../img/blog/blog_img_desk_5_390px.webp 390w,
+            ../img/blog/blog_img_desk_5_780px.webp 780w,
+            ../img/blog/blog_img_tabl_5_344px.webp 344w,
+            ../img/blog/blog_img_tabl_5_688px.webp 688w
+          "
+          sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 320px) 136px, 100vw"
+          alt=""
+          src="../img/blog/blog_img_desk_5_390px.jpg"
+        />
+      </div>
+      <div class="slick__item">
+        <img
+          class="slick__box"
+          srcset="
+            ../img/blog/blog_img_mob_6_136px.webp  136w,
+            ../img/blog/blog_img_mob_6_272px.webp  272w,
+            ../img/blog/blog_img_desk_6_390px.webp 390w,
+            ../img/blog/blog_img_desk_6_780px.webp 780w,
+            ../img/blog/blog_img_tabl_6_344px.webp 344w,
+            ../img/blog/blog_img_tabl_6_688px.webp 688w
+          "
+          sizes="(min-width: 1280px) 390px, (min-width: 768px) 344px, (min-width: 319px) 136px, 100vw"
+          alt=""
+          src="../img/blog/blog_img_desk_6_390px.jpg"
+        />
       </div>
     </div>
 
     <p class="blog-subtitle">Follow to our newsletter</p>
-    <button class="blog-btn button" type="button">Subscribe</button>
-
+    <button class="blog-btn button js-open-modal" data-modal="2" type="button">
+      Subscribe
+    </button>
   </div>
 </section>
 
@@ -289,6 +373,53 @@
  </footer>
     </main>
 
+    <!-- backdrop for modals -->
+    <div class="overlay js-overlay-modal">
+      <div class="modal" data-modal="2">
+  <!--   Svg иконка для закрытия окна  -->
+
+  <svg class="modal__cross js-modal-close" width="12" height="12">
+    <use href="../img/Icons/sprite.svg#icon-close"></use>
+  </svg>
+  <img
+    class="modal-img"
+    srcset="
+      ../img/modal2/modal_mob@1x.webp   272w,
+      ../img/modal2/modal_mob@2x.webp   544w,
+      ../img/modal2/modal_tab@1x.webp   588w,
+      ../img/modal2/modal_tab@2x.webp  1176w,
+      ../img/modal2/modal_desk@1x.webp  428w,
+      ../img/modal2/modal_desk@2x.webp  856w
+    "
+    sizes="(min-width: 1280px) 428px, (min-width: 768px) 588px, (min-width: 319px) 272px, 100vw"
+    alt=""
+    src="../img/modal/modal_mob@1x.webp"
+  />
+  <div class="modal-container">
+    <h4 class="modal__title">Follow to our newsletter</h4>
+    <p class="modal__text">
+      Be the first to get exclusive offers and the latest news on our product
+      directly in your box.
+    </p>
+
+    <form class="modal-sub-form">
+      <label class="modal-sub-mail-label" for="sub_email"
+        >Email<input
+          class="modal-sub-mail-field"
+          type="email"
+          id="sub_email"
+          name="mail"
+          placeholder="Your email"
+          required
+      /></label>
+      <button class="blog-btn modal-sub-btn button" type="button">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</div>
+
+    </div>
 
     <!-- Base JS -->
     
