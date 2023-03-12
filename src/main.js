@@ -1,1 +1,3 @@
-import './js/slick'
+
+import './js/slick';
+import './js/modal';
