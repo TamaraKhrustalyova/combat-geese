@@ -1,4 +1,4 @@
-li::before {
+.item-delivery::before {
     /* display: inline-block; */
     
     content: counter(item);
@@ -17,9 +17,6 @@ li::before {
     padding-bottom: 8px;
 }
 
-li {    
-    counter-increment: item;
-}
 .item-delivery:not(:last-child) {
     margin-bottom: 26px;
 }
@@ -28,7 +25,7 @@ li {
 }
 .item-delivery{
     display: flex;
-    
+    counter-increment: item;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
