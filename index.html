@@ -33,12 +33,12 @@
     />
     
     <script type="module" crossorigin src="/combat-geese/assets/index-c78faf1c.js"></script>
-    <link rel="stylesheet" href="/combat-geese/assets/index-51c17be9.css">
+    <link rel="stylesheet" href="/combat-geese/assets/index-d22a9e16.css">
   </head>
 
   <body>
     <!-- partials -->
-    <!-- <header class="page-header">
+    <header class="page-header">
   <div class="container header">
       <a class="logo" href="">
         <svg class="logo-img" width="72" height="57">
@@ -64,7 +64,7 @@
         </li>
       </ul>
     </nav>
-    <a href="" class="call">
+    <a href="#" data-modal="contact-us" class="call js-open-modal">
       <svg class="call" width="22" height="22">
         <use href="../img/Icons/sprite.svg#icon-tel"></use>
       </svg>
@@ -82,8 +82,8 @@
   <div class="menu-container js-menu-container">
     <div class="mobile-menu">
       <button class="mobile-menu-close-btn menu-toggle js-close-menu">
-        <svg class="mobile-menu-close-icon" width="8" height="8">
-          <use href="../img/Icons/sprite.svg#close-icon.svg"></use>
+        <svg class="mobile-menu-close-icon" width="24" height="24">
+          <use href="../img/Icons/sprite.svg#close-icon"></use>
         </svg>
       </button>
       <ul class="mobile-navigation list">
@@ -105,9 +105,62 @@
       </ul>
     </div>
   </div>
+  <div class="modal" data-modal="contact-us" >
+    <!--<button type="button" class="modal-close-btn">-->
+      <svg class="modal__cross js-modal-close" width="24" height="24">
+        <use href="../img/Icons/sprite.svg#icon-close"></use>
+      </svg>
+    <!--</button>-->
+    <h3>Contact us</h3>
+      <p>If you have any additional questions or you want to
+        clarify something before you make an order please
+        fill in your contact details. We will call you back. </p>
+    <form>
+      <label class="modal-form-field">
+        <span class="modal-form-input-desc">Name*</span>
+        <span class="modal-form-input-wrapper">
+          <input
+            type="text"
+            name="user_name"
+            class="modal-form-input"
+            required
+            pattern="[a-zA-Zа-яА-Я]+"
+            minlength="2">
+          </span>
+      </label>
+      <label class="modal-form-field">
+        <span class="modal-form-input-desc">Email*</span>
+        <span class="modal-form-input-wrapper">
+          <input
+            type="email"
+            name="user_email"
+            class="modal-form-input"
+            required>
+          </span>
+      </label>
+    </form>
+    <button type="submit" class="modal-form-submit">
+      <a href="#" data-modal="thank-you" class="thank-you js-open-modal">Send</a>
+    </button>
+  </div>
 
+  <div class="modal js-open-modal" data-modal="thank-you" id="continue">
+    <!--<button type="button" class="modal-close-btn">-->
+      <svg class="modal__cross js-modal-close" width="24" height="24">
+        <use href="../img/Icons/sprite.svg#icon-close"></use>
+      </svg>
+    <!--</button>-->
+    <img src='../img/header/Frame-48.png' alt="Thank you">
+    <h3>Thank you!</h3>
+    <p>We have received your contact details and will reach you soon.</p>
+    <button type="submit" class="modal-form-submit" id="close">Continue
+      <!--<a href="#" class="continue js-modal-close">Continue</a>-->
+    </button>
+  </div>
+
+  <div class="overlay js-overlay-modal"></div>
 </header>
- -->
+
 
     <main>
       <section class="hero">
@@ -151,7 +204,7 @@
             beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.
           </p>
 
-          <picture>
+          <!-- <picture>
             <source srcset="../img/about/about_img_mob_288px.webp 288w, ../img/about/about_img_mob_576px.webp 576w"
               media="(min-width: 320px)" type="image/webp">
           
@@ -171,7 +224,14 @@
               media="(min-width:1200px)">
           
             <img class="about__image" src="../img/about/about_img_mob_288px.webp" alt="flowes" />
-          </picture>
+          </picture> -->
+            <img
+            class="about__image"
+            srcset="/combat-geese/assets/about_img_mob_288px-f6bc32bb.webp 288w, /combat-geese/assets/about_img_mob_576px-6542814e.webp 576w, /combat-geese/assets/about_img_tabl_344px-1f59822c.webp 344w, /combat-geese/assets/about_img_tabl_688px-81046f68.webp 688w, /combat-geese/assets/about_img_desk_632-b9792a10.webp 632w, /combat-geese/assets/about_img_desk_1264-6d29f957.webp 12648w"
+            sizes="(min-width: 1280px) 632px, (min-width: 768px) 344px, (min-width: 320px) 288px"
+            alt="flowes"
+            src="../img/about/about_img_mob_288px.jpg"
+            />
         </div>       
     </div>
 </section>
