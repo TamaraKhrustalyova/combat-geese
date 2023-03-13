@@ -20,10 +20,12 @@
 .item-delivery:not(:last-child) {
     margin-bottom: 14px;
 }
+
 .item-delivery:last-child {
     margin-bottom: 26px;
 }
-.item-delivery{
+
+.item-delivery {
     display: flex;
     counter-increment: item;
     font-family: 'Montserrat';
@@ -35,25 +37,27 @@
     gap: 8px;
     align-items: center;
 }
-.title.delivery{
+
+.title.delivery {
     margin-bottom: 32px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 .item-delivery {
     font-size: 24px;
     line-height: calc(29/24);
     gap: 20px;
 }
-.item-delivery::before{
+
+.item-delivery::before {
     font-size: 26px;
     line-height: calc(32/26);
     padding-top: 16px;
     padding-bottom: 16px;
     min-width: 64px;
     height: 64px;
-
 }
+
 .item-delivery:not(:last-child) {
     margin-bottom: 20px;
 }
@@ -61,10 +65,11 @@
 .item-delivery:last-child {
     margin-bottom: 40px;
 }
+
 .title.delivery {
     margin-bottom: 60px;
 }
-}
+
 @media screen and (min-width: 1280px) {
     .item-delivery {
         font-size: 32px;
@@ -79,31 +84,30 @@
     .item-delivery:last-child {
         margin-bottom: 60px;
     }
-        .title.delivery {
-            margin-bottom: 80px;
-        }
+    .title.delivery {
+        margin-bottom: 80px;
+    }
     .item-delivery::before{
         margin-left: 72px;
     }
-}
+
 .inside-item {
-    
     display: inline-block;
     align-content: flex-end;
     width: calc(100% - 48px);
 }
-.in-item{
+
+.in-item {
     display: block;
 }
-.delivery-picture{
+
+.delivery-picture  {
     display: block;
     width: 100%;
     height: auto;
-    
 }
-<<<<<<< Updated upstream
-=======
-/* .title {
+
+ .title {
     overflow: hidden;
     text-align: left;
     font-size: 24px;
@@ -143,5 +147,5 @@
     .section {
         margin-bottom: 100px;
     }
-} */
->>>>>>> Stashed changes
+
+
