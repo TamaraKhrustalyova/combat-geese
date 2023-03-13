@@ -21,7 +21,7 @@
     font-weight: 400;
     font-size: 52px;
     line-height: calc(63 / 52);
-    text-align: center;
+    left: 5%;
 }
 
 .hero-title::after {
@@ -36,10 +36,13 @@
 
 .hero-badge {
     width: 46px;
+    margin-left: 11px;
     height: 34px;
     left: 11px;
     top: 209px;
+    font-weight: 400;
     line-height: calc(17 / 14);
+    animation: vertical-slide 1000ms ease-out 1000ms both;
 }
 
 .hero-btn {
@@ -67,18 +70,20 @@
     object-position: center;
 }
 
+
+
 /* Table */
 @media screen and (min-width: 768px) {
     .hero {
             position: relative;
-            max-width: 320px;
-            margin: 15px auto;
+            max-width: 720px;
+            margin: 24px auto;
         }
     
         .hero-container {
             position: relative;
             z-index: 10;
-            height: 389px;
+            height: 825px;
     
             display: flex;
             align-items: center;
@@ -89,8 +94,8 @@
             position: absolute;
             bottom: 0;
             font-weight: 400;
-            font-size: 52px;
-            line-height: calc(63 / 52);
+            font-size: 120px;
+            line-height: 146px;
             text-align: center;
         }
     
@@ -105,16 +110,17 @@
         }
     
         .hero-badge {
-            width: 46px;
-            height: 34px;
-            left: 11px;
-            top: 209px;
-            line-height: calc(17 / 14);
+            width: 76px;
+                margin-left: 49px;
+                font-size: 24px;
+                line-height: calc(29 / 24);
         }
     
         .hero-btn {
-            width: 64px;
-            height: 76px;
+            width: 145px;
+            height: 150px;
+            left: 575px;
+            top: 357px;
             background-color: transparent;
             border: none;
     
@@ -136,37 +142,9 @@
             object-fit: cover;
             object-position: center;
         }
-    
-        @media screen and (min-width: 768px) {
-            @keyframes scale-up-center {
-                0% {
-                    clip-path: inset(150px 421px 92px 421px round 226px);
-                }
-    
-                50% {
-                    clip-path: inset(150px 345px 92px 345px round 226px);
-                }
-    
-                100% {
-                    clip-path: inset(0 round 100);
-                }
-            }
-        }
-    
-       
-@keyframes scale-up-center {
-    0% {
-        clip-path: inset(150px 421px 92px 421px round 226px);
-    }
-
-    50% {
-        clip-path: inset(150px 345px 92px 345px round 226px);
-    }
-
-    100% {
-        clip-path: inset(0 round 100);
-    }
-}
+        
+        
+        
 }
 
 /* Desktop */
@@ -270,28 +248,6 @@
     object-position: center;
 }
 
-/* hero-icon  */
-}
-.hero-icon {
-    display: block;
-    width: 64px;
-    height: 76px;
-    transform-origin: center;
-    
-}
-@media screen and (min-width: 768px) {
-    .hero-icon {
-        width: 145px;
-        height: 150px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .hero-icon {
-        width: 166px;
-        height: 166px;
-    }
-}
 
 /* animations properties */
 
@@ -330,5 +286,26 @@
 
     to {
         transform: rotate(0);
+    }
+}
+} 
+
+.hero-icon {
+    display: block;
+    width: 64px;
+    height: 76px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-icon {
+        width: 145px;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-icon {
+        width: 166px;
+        height: 166px;
     }
 }
