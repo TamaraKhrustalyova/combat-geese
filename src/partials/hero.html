@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero" id="anemone">
   <div class="hero-container">
     <h1 class="hero-title" style="--shift-to-y: -355px">ANEMONE</h1>
     <p
@@ -13,16 +13,25 @@
       style="--shift-from-x: 0; --shift-to-x: 25px; --shift-to-y: 170px"
     >
       <svg class="hero-icon" width="166" height="166">
-        <use href="../img/Icons/sprite.svg#btn-txt"></use>
-        <use href="../img/Icons/sprite.svg#btn-arrow"></use>
+        <use href="./img/icons/sprite.svg#btn-txt"></use>
+        <use href="./img/icons/sprite.svg#btn-arrow"></use>
       </svg>
     </button>
   </div>
   <div class="hero-shape">
+    <source
+      srcset="
+        ./img/hero/hero_img_desk_3_1283px.jpg,
+        ./img/hero/hero_img_desk_3_2566px.jpg
+      "
+      type="image/jpg"
+    />
     <img
       class="hero-img"
-      src="https://raw.githubusercontent.com/YK911/flower-studio-assets/main/hero-bg.jpg"
+      src="./img/hero/hero_img_desk_3_2566px.jpg"
       alt="Flower studio preview"
     />
   </div>
 </section>
+
+<section style="height: 100px"></section>
