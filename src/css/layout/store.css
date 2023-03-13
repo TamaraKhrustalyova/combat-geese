@@ -13,14 +13,20 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    max-width: 344px;
+    /* max-width: 344px; */
   }
   .store-title::after {
     content: '';
     display: inline-block;
+<<<<<<< Updated upstream
     flex-grow: 1;
     border: 1px solid var(--dark-cl);
     
+=======
+    /* width: calc(100% - 8px); */
+    border: 1px solid var(--dark-cl);
+    width: 100%;
+>>>>>>> Stashed changes
   }
 }
 @media screen and (min-width: 1200px) {
