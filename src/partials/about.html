@@ -5,12 +5,10 @@
 
         <h3 class="title">About</h3>
         <div class="about">
-          <p class="about__text">
-            We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the
-            beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.
-          </p>
+          <p class="about__text">We are a minimalistic flower studio. We love people and flowers. Therefore, every day we give people the
+          beauty and joy creating stylish and modern masterpieces. Every bouquet we create is unique as you are.</p>
 
-          <picture>
+          <!-- <picture>
             <source srcset="../img/about/about_img_mob_288px.webp 288w, ../img/about/about_img_mob_576px.webp 576w"
               media="(min-width: 320px)" type="image/webp">
           
@@ -30,7 +28,21 @@
               media="(min-width:1200px)">
           
             <img class="about__image" src="../img/about/about_img_mob_288px.webp" alt="flowes" />
-          </picture>
+          </picture> -->
+            <img
+            class="about__image"
+            srcset="
+              ./img/about/about_img_mob_288px.webp  288w,
+              ./img/about/about_img_mob_576px.webp  576w,
+              ./img/about/about_img_tabl_344px.webp 344w,
+              ./img/about/about_img_tabl_688px.webp 688w,
+              ./img/about/about_img_desk_632.webp 632w,
+              ./img/about/about_img_desk_1264.webp 12648w
+            "
+            sizes="(min-width: 1280px) 632px, (min-width: 768px) 344px, (min-width: 320px) 288px"
+            alt="flowes"
+            src="../img/about/about_img_mob_288px.jpg"
+            />
         </div>       
     </div>
 </section>
