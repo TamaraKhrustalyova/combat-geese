@@ -67,6 +67,108 @@
     object-position: center;
 }
 
+/* Table */
+@media screen and (min-width: 768px) {
+    .hero {
+            position: relative;
+            max-width: 320px;
+            margin: 15px auto;
+        }
+    
+        .hero-container {
+            position: relative;
+            z-index: 10;
+            height: 389px;
+    
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    
+        .hero-title {
+            position: absolute;
+            bottom: 0;
+            font-weight: 400;
+            font-size: 52px;
+            line-height: calc(63 / 52);
+            text-align: center;
+        }
+    
+        .hero-title::after {
+            content: '';
+            position: absolute;
+            background-color: currentColor;
+            width: 20px;
+            height: 2px;
+            right: 7px;
+            top: 5px;
+        }
+    
+        .hero-badge {
+            width: 46px;
+            height: 34px;
+            left: 11px;
+            top: 209px;
+            line-height: calc(17 / 14);
+        }
+    
+        .hero-btn {
+            width: 64px;
+            height: 76px;
+            background-color: transparent;
+            border: none;
+    
+        }
+    
+        .hero-shape {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            animation: scale-up-center 1000ms ease-out 1000ms both;
+        }
+    
+        .hero-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    
+        @media screen and (min-width: 768px) {
+            @keyframes scale-up-center {
+                0% {
+                    clip-path: inset(150px 421px 92px 421px round 226px);
+                }
+    
+                50% {
+                    clip-path: inset(150px 345px 92px 345px round 226px);
+                }
+    
+                100% {
+                    clip-path: inset(0 round 100);
+                }
+            }
+        }
+    
+       
+@keyframes scale-up-center {
+    0% {
+        clip-path: inset(150px 421px 92px 421px round 226px);
+    }
+
+    50% {
+        clip-path: inset(150px 345px 92px 345px round 226px);
+    }
+
+    100% {
+        clip-path: inset(0 round 100);
+    }
+}
+}
+
 /* Desktop */
 @media screen and (min-width: 1280px) {
 .hero {
@@ -129,25 +231,25 @@
     animation: move-vertical 1000ms ease-out 1000ms both;
 }
 
-[href="#btn-txt"] {
+[href="./img/icons/sprite.svg#btn-txt"] {
     transform-origin: center;
     animation: infinity-rotate 30s linear 4s infinite;
 }
 
-.hero-btn:hover [href="#btn-txt"],
-.hero-btn:focus [href="#btn-txt"] {
+.hero-btn:hover [href="./img/icons/sprite.svg#btn-txt"],
+.hero-btn:focus [href="./img/icons/sprite.svg#btn-txt"] {
     animation-play-state: paused;
 }
 
-[href="#btn-arrow"] {
+[href="./img/icons/sprite.svg#btn-arrow"] {
     transform-origin: center;
     transition: transform 500ms ease-out;
 }
 
-.hero-btn:hover [href="#btn-arrow"],
-.hero-btn:focus [href="#btn-arrow"] {
+.hero-btn:hover [href="./img/icons/sprite.svg#btn-arrow"],
+.hero-btn:focus [href="./img/icons/sprite.svg#btn-arrow"] {
     transform: rotate(-122deg);
-}
+   }
 
 .hero-shape {
     position: absolute;
@@ -167,12 +269,16 @@
     object-fit: cover;
     object-position: center;
 }
+
+/* hero-icon  */
+}
 .hero-icon {
     display: block;
     width: 64px;
     height: 76px;
+    transform-origin: center;
+    
 }
-
 @media screen and (min-width: 768px) {
     .hero-icon {
         width: 145px;
@@ -188,6 +294,8 @@
 }
 
 /* animations properties */
+
+@media screen and (min-width: 1280px) {
 @keyframes scale-up-center {
     0% {
         clip-path: inset(150px 421px 92px 421px round 226px);
@@ -213,6 +321,7 @@
         fill: #fff;
     }
 }
+}
 
 @keyframes infinity-rotate {
     from {
@@ -222,5 +331,4 @@
     to {
         transform: rotate(0);
     }
-}
 }
