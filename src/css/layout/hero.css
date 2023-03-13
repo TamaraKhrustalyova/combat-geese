@@ -2,16 +2,14 @@
 .hero {
     position: relative;
     max-width: 320px;
-    height: 389px;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 .hero-container {
     position: relative;
     z-index: 10;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0 16px;
+    height: 389px;
+    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,6 +21,7 @@
     font-weight: 400;
     font-size: 52px;
     line-height: calc(63 / 52);
+    text-align: center;
 }
 
 .hero-title::after {
@@ -167,6 +166,25 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+.hero-icon {
+    display: block;
+    width: 64px;
+    height: 76px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-icon {
+        width: 145px;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-icon {
+        width: 166px;
+        height: 166px;
+    }
 }
 
 /* animations properties */
