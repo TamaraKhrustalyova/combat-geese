@@ -43,10 +43,12 @@
 }
 
 @media screen and (min-width: 768px) {
-.item-delivery {
-    font-size: 24px;
-    line-height: calc(29/24);
-    gap: 20px;
+
+    .item-delivery {
+        font-size: 24px;
+        line-height: calc(29/24);
+        gap: 20px;
+    }
 }
 
 .item-delivery::before {
@@ -90,6 +92,7 @@
     .item-delivery::before{
         margin-left: 72px;
     }
+}
 
 .inside-item {
     display: inline-block;
@@ -147,5 +150,6 @@
     .section {
         margin-bottom: 100px;
     }
+}
 
 
