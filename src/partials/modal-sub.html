@@ -1,0 +1,44 @@
+<div class="modal" data-modal="2">
+  <!--   Svg иконка для закрытия окна  -->
+
+  <svg class="modal__cross js-modal-close" width="12" height="12">
+    <use href="../img/Icons/sprite.svg#icon-close"></use>
+  </svg>
+  <img
+    class="modal-img"
+    srcset="
+      ./img/modal2/modal_mob@1x.webp   272w,
+      ./img/modal2/modal_mob@2x.webp   544w,
+      ./img/modal2/modal_desk@1x.webp  428w,
+      ./img/modal2/modal_desk@2x.webp  856w,
+      ./img/modal2/modal_tab@1x.webp   588w,
+      ./img/modal2/modal_tab@2x.webp  1176w
+    "
+    sizes="(min-width: 1280px) 428px, (min-width: 768px) 588px, (min-width: 319px) 272px, 100vw"
+    alt=""
+    src=""
+  />
+  <div class="modal-container">
+    <h4 class="modal__title">Follow to our newsletter</h4>
+    <p class="modal__text">
+      Be the first to get exclusive offers and the latest news on our product
+      directly in your box.
+    </p>
+
+    <form class="modal-sub-form">
+      <label class="modal-sub-mail-label" for="sub_email"
+        >Email<input
+          class="modal-sub-mail-field"
+          type="email"
+          id="sub_email"
+          name="mail"
+          placeholder="Your email"
+          required
+        />
+      </label>
+      <button class="blog-btn modal-sub-btn button" type="submit">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</div>

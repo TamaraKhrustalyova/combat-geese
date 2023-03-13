@@ -27,9 +27,11 @@ a {
 button {
   padding: 0;
   cursor: pointer;
+  outline: none;
 }
 
-img {
+img,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
