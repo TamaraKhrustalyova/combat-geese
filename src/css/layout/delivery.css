@@ -41,6 +41,9 @@
 .title.delivery {
     margin-bottom: 32px;
 }
+.list-container {
+    max-width: 288px;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -49,7 +52,7 @@
         line-height: calc(29/24);
         gap: 20px;
     }
-}
+
 
 .item-delivery::before {
     font-size: 26px;
@@ -71,7 +74,10 @@
 .title.delivery {
     margin-bottom: 60px;
 }
-
+.list-container {
+    max-width: 677px;
+}
+}
 @media screen and (min-width: 1280px) {
     .item-delivery {
         font-size: 32px;
@@ -92,6 +98,9 @@
     .item-delivery::before{
         margin-left: 72px;
     }
+        .list-container {
+            max-width: 1088px;
+        }
 }
 
 .inside-item {
@@ -104,52 +113,10 @@
     display: block;
 }
 
-.delivery-picture  {
+.delivery-img  {
     display: block;
-    width: 100%;
+    min-width: 100%;
     height: auto;
 }
 
- .title {
-    overflow: hidden;
-    text-align: left;
-    font-size: 24px;
-    line-height: 1.3;
-    color: #000000;
-}
-
-.title:after {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    border: 1px solid var(--dark-cl);
-    position: relative;
-}
-
-.title:after {
-    margin-right: -100%;
-    right: -14px;
-}
-
-@media screen and (min-width: 768px) {
-    .title {
-        font-size: 44px;
-    }
-
-    .title:after {
-        right: -16px;
-    }
-}
-
-.section {
-    margin-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) {
-    .section {
-        margin-bottom: 100px;
-    }
-}
-
-
+ 
