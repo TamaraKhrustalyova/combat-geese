@@ -35,7 +35,18 @@
 }
 
 @media screen and (min-width: 768px) {
+    .section {
+        margin-bottom: 100px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .txt {
+        width: 100%;
+    }
+  }
+
   .section {
     margin-bottom: 100px;
   }
-}
+

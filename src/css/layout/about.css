@@ -7,6 +7,7 @@
     align-content: center;
     align-items: center;
 }
+
 @media screen and (min-width: 768px) {
     .about {
         flex-wrap: nowrap; 
@@ -16,20 +17,30 @@
     }
  }
 
-
 @media screen and (min-width: 1280px) {
     .about {
         gap: 90px;
-
         margin-top: 26px;
     }
 }
 
+/* .section_about {
+    padding-bottom: 100px;
+} */
+
 .about__text {
+
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 61px;
+    margin-top: 32px;
+    margin-bottom: 16px;
     letter-spacing: 0;
 
     width: 288px;
     height: 140px;
+
     
     font-weight: 400;
     font-size: 16px;
@@ -40,16 +51,21 @@
 
 @media screen and (min-width: 768px) {
     .about__text {
+        width: 100%;
+        height: 100%;
+
         width: 322px;
         height: 168px;
 
         font-size: 20px;
         /* width: 322px;
         height: 168px;
+
         left: 0px;
         top: 110px;
         margin-top: 56px;
         margin-right: 54px;
+        margin-bottom: 23px;
 
         font-size: 20px;
         line-height: 1.2; */
@@ -58,16 +74,21 @@
 
 @media screen and (min-width: 1280px) {
     .about__text {
+
+        width: 100%;
+        height: 100%;
         width: 510px;
         height: 135px;
 
         font-size: 22px;
         /* width: 510px;
         height: 135px;
+
         left: 0px;
         top: 174px;
         margin-top: 120px;
         margin-right: 90px;
+        margin-bottom: 115px;
         
         font-size: 22px;
         line-height: 1.2; */
