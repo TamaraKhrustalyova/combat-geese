@@ -214,3 +214,7 @@
   right: 16px;
   bottom: 14px;
 }
+
+.my-slick-next {
+  transform: rotate(180deg);
+}
