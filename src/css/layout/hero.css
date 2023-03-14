@@ -22,7 +22,7 @@
     bottom: 0;
     font-weight: 400;
     font-size: 52px;
-    line-height: calc(63 / 52);
+    line-height: 1.33;
     left: 5%;
     animation: move-vertical 1000ms ease-out 1000ms both;
 }
@@ -66,11 +66,24 @@
     animation: scale-up-center 1000ms ease-out 1000ms both;
 }
 
-.hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+[href="./img/icons/sprite.svg#btn-txt"] {
+    transform-origin: center;
+    animation: infinity-rotate 30s linear 4s infinite;
+}
+
+.hero-btn:hover [href="./img/icons/sprite.svg#btn-txt"],
+.hero-btn:focus [href="./img/icons/sprite.svg#btn-txt"] {
+    animation-play-state: paused;
+}
+
+[href="./img/icons/sprite.svg#btn-arrow"] {
+    transform-origin: center;
+    transition: transform 500ms ease-out;
+}
+
+.hero-btn:hover [href="./img/icons/sprite.svg#btn-arrow"],
+.hero-btn:focus [href="./img/icons/sprite.svg#btn-arrow"] {
+    transform: rotate(-122deg);
 }
 
 
@@ -80,7 +93,8 @@
     .hero {
             position: relative;
             max-width: 720px;
-            margin: 24px auto;
+            margin: 0px auto;
+            padding-top: 24px;
         }
     
         .hero-container {
@@ -117,6 +131,7 @@
                 margin-left: 49px;
                 font-size: 24px;
                 line-height: calc(29 / 24);
+                animation: move-vertical 1000ms ease-out 1000ms both;
         }
     
         .hero-btn {
@@ -138,16 +153,6 @@
             height: 100%;
             animation: scale-up-center 1000ms ease-out 1000ms both;
         }
-    
-        .hero-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-        
-        
-        
 }
 
 /* Desktop */
@@ -212,26 +217,6 @@
     animation: move-vertical 1000ms ease-out 1000ms both;
 }
 
-[href="./img/icons/sprite.svg#btn-txt"] {
-    transform-origin: center;
-    animation: infinity-rotate 30s linear 4s infinite;
-}
-
-.hero-btn:hover [href="./img/icons/sprite.svg#btn-txt"],
-.hero-btn:focus [href="./img/icons/sprite.svg#btn-txt"] {
-    animation-play-state: paused;
-}
-
-[href="./img/icons/sprite.svg#btn-arrow"] {
-    transform-origin: center;
-    transition: transform 500ms ease-out;
-}
-
-.hero-btn:hover [href="./img/icons/sprite.svg#btn-arrow"],
-.hero-btn:focus [href="./img/icons/sprite.svg#btn-arrow"] {
-    transform: rotate(-122deg);
-   }
-
 .hero-shape {
     position: absolute;
     top: 0;
@@ -244,17 +229,8 @@
     animation: scale-up-center 1000ms ease-out 1000ms both;
 }
 
-.hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-
 /* animations properties */
 
-@media screen and (min-width: 1280px) {
 @keyframes scale-up-center {
     0% {
         clip-path: inset(150px 421px 92px 421px round 226px);
@@ -280,7 +256,10 @@
         fill: #fff;
     }
 }
+
 }
+
+/* animations btn */
 
 @keyframes infinity-rotate {
     from {
@@ -290,8 +269,32 @@
     to {
         transform: rotate(0);
     }
-}
 } 
+
+
+/* btn-txt + btn-arrow  */
+
+[href="./img/icons/sprite.svg#btn-txt"] {
+    transform-origin: center;
+    animation: infinity-rotate 30s linear 4s infinite;
+}
+
+.hero-btn:hover [href="./img/icons/sprite.svg#btn-txt"],
+.hero-btn:focus [href="./img/icons/sprite.svg#btn-txt"] {
+    animation-play-state: paused;
+}
+
+[href="./img/icons/sprite.svg#btn-arrow"] {
+    transform-origin: center;
+    transition: transform 500ms ease-out;
+}
+
+.hero-btn:hover [href="./img/icons/sprite.svg#btn-arrow"],
+.hero-btn:focus [href="./img/icons/sprite.svg#btn-arrow"] {
+    transform: rotate(-122deg);
+}
+
+/* Icon */
 
 .hero-icon {
     display: block;
@@ -311,4 +314,11 @@
         width: 166px;
         height: 166px;
     }
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
