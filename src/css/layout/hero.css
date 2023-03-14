@@ -2,7 +2,9 @@
 .hero {
     position: relative;
     max-width: 320px;
-    margin: 15px auto;
+    margin: 0 auto;
+    padding-top: 16px;
+    
 }
 
 .hero-container {
@@ -22,6 +24,7 @@
     font-size: 52px;
     line-height: calc(63 / 52);
     left: 5%;
+    animation: move-vertical 1000ms ease-out 1000ms both;
 }
 
 .hero-title::after {
@@ -50,7 +53,7 @@
     height: 76px;
     background-color: transparent;
     border: none;
-    
+     animation: vertical-swipe 1000ms ease-out 1000ms both;
 }
 
 .hero-shape {
