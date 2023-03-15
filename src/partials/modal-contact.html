@@ -1,0 +1,63 @@
+<!-- "Contact us" modal -->
+<div class="modal modal-contact" data-modal="1">
+  <svg class="modal__cross js-modal-close" width="12" height="12">
+    <use href="./img/icons/sprite.svg#icon-close"></use>
+  </svg>
+  <div class="modal-contact-container">
+    <h4 class="modal-contact-title">Contact us</h4>
+    <p class="modal-contact-text">
+      If you have any additional questions or you want to clarify something
+      before you make an order please fill in your contact details. We will call
+      you back.
+    </p>
+
+    <form class="modal-contact-form">
+      <label class="modal-contact-label" for="contact_name"
+        >Name<input
+          class="modal-contact-field"
+          type="text"
+          id="contact_name"
+          name="name"
+          placeholder="Your name"
+          required
+        />
+      </label>
+      <label class="modal-contact-label" for="contact_email"
+        >Email<input
+          class="modal-contact-field"
+          type="email"
+          id="contact_email"
+          name="mail"
+          placeholder="Your email"
+          required
+        />
+      </label>
+    </form>
+    <button
+      class="blog-btn modal-sub-btn button js-open-modal"
+      data-modal="3"
+      type="submit"
+    >
+      Send
+    </button>
+  </div>
+</div>
+
+<!-- "Thank u" modal  -->
+
+<div class="modal modal-thnku" data-modal="3">
+  <svg class="modal__cross js-modal-close" width="12" height="12">
+    <use href="./img/icons/sprite.svg#icon-close"></use>
+  </svg>
+  <svg class="modal-thnk-content-icon" width="188" height="142">
+    <use href="./img/Icons/sprite.svg#icon-modal-1-desk"></use>
+  </svg>
+
+  <h4 class="modal-thnku-title">Thank you!</h4>
+  <p class="modal-thnku-text">
+    We have received your contact details and will reach you soon.
+  </p>
+  <button class="blog-btn modal-sub-btn button js-modal-close" type="submit">
+    Continue
+  </button>
+</div>
