@@ -100,9 +100,10 @@ html {
   gap: 48px;
 }
 
-
 @media screen  and (min-width: 480px) {
-
+  .page-header {
+    /*padding-top: 16px;*/
+  }
   .menu-link{
     font-weight: 400;
     font-size: 20px;
@@ -172,6 +173,7 @@ html {
     fill: var(--dark-cl);
   }
 }
+
 /*@media screen and (max-width: 769px){
   .logo {
     margin-right: 80px;
