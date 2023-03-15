@@ -8,7 +8,7 @@
 .hero-container {
     position: relative;
     z-index: 10;
-    height: 389px;
+    height: 290px;
     
     display: flex;
     align-items: center;
@@ -65,7 +65,7 @@
         .hero-container {
             position: relative;
             z-index: 10;
-            height: 825px;
+            height: 705px;
     
             display: flex;
             align-items: center;
