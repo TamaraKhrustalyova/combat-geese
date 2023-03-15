@@ -102,9 +102,7 @@ html {
 
 
 @media screen  and (min-width: 480px) {
-  .page-header{
-    /*padding-top: 16px;*/
-  }
+  
   .menu-link{
     font-weight: 400;
     font-size: 20px;
@@ -182,7 +180,7 @@ html {
 }*/
 @media screen and (min-width: 768px) and (max-width: 1280px){
   .page-header{
-    position: inherit;
+    position: relative;
     /*padding-top: 24px;*/
   }
   .logo {
@@ -231,7 +229,7 @@ html {
 
 @media screen and (min-width: 480px) and (max-width: 767px){
   .page-header{
-    position: inherit;
+    position: relative;
     padding-top: 16px;
   }
   .header{
