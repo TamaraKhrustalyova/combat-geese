@@ -101,12 +101,27 @@
   }
 }
 
+.modal-icon-valid {
+  opacity: 0;
+}
+
+.modal-icon-invalid {
+  opacity: 0;
+}
+
+.modal-contact-field:not(:placeholder-shown):required:valid + svg {
+  opacity: 1;
+}
+
 .modal-contact-field:not(:placeholder-shown):required:valid {
   border-color: green;
 }
 
 .modal-contact-field:not(:placeholder-shown):required:invalid {
   border-color: red;
+}
+.modal-contact-field:not(:placeholder-shown):required:invalid + svg + svg {
+  opacity: 1;
 }
 
 /* "Thank u" modal style*/

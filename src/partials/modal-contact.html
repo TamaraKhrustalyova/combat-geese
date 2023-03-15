@@ -19,8 +19,15 @@
           id="contact_name"
           name="name"
           placeholder="Your name"
+          minlength="3"
           required
         />
+        <svg class="modal-icon-valid" width="12" height="12">
+          <use href="./img/icons/sprite.svg#icon-valid"></use>
+        </svg>
+        <svg class="modal-icon-invalid" width="12" height="12">
+          <use href="./img/icons/sprite.svg#icon-invalid"></use>
+        </svg>
       </label>
       <label class="modal-contact-label" for="contact_email"
         >Email<input
@@ -31,6 +38,12 @@
           placeholder="Your email"
           required
         />
+        <svg class="modal-icon-valid" width="12" height="12">
+          <use href="./img/icons/sprite.svg#icon-valid"></use>
+        </svg>
+        <svg class="modal-icon-invalid" width="12" height="12">
+          <use href="./img/icons/sprite.svg#icon-invalid"></use>
+        </svg>
       </label>
     </form>
     <button
@@ -50,7 +63,7 @@
     <use href="./img/icons/sprite.svg#icon-close"></use>
   </svg>
   <svg class="modal-thnk-content-icon" width="188" height="142">
-    <use href="./img/Icons/sprite.svg#icon-modal-1-desk"></use>
+    <use href="./img/icons/sprite.svg#icon-modal-1-desk"></use>
   </svg>
 
   <h4 class="modal-thnku-title">Thank you!</h4>
@@ -58,6 +71,6 @@
     We have received your contact details and will reach you soon.
   </p>
   <button class="blog-btn modal-sub-btn button js-modal-close" type="submit">
-    Continue
+    <a href="">Continue</a>
   </button>
 </div>
