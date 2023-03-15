@@ -8,9 +8,12 @@
     flex-wrap: wrap;
     row-gap: 32px;
     column-gap: 32px;
-    
+
 }
 
+.footer-logo-icon{
+  fill: white;
+}
 .footer-logo{
     display: none;
 }
@@ -75,7 +78,7 @@ flex-direction: column;
     }
     .container-footer{
         flex-wrap: nowrap;
-        
+
         justify-content: space-between;
     }
     .footer-box-navigation-type{
@@ -107,6 +110,9 @@ flex-direction: column;
         padding-top: 72px;
         padding-bottom: 72px;
      }
+    .footer-logo {
+      display: block;
+    }
      .footer-box-logo-navigation-type{
         display:flex;
      }
@@ -130,6 +136,6 @@ flex-direction: column;
     .footer-box-contacts-icon{
         gap: 206px;
     }
-} 
+}
 
 
