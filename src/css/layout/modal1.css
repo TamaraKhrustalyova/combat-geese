@@ -1,0 +1,163 @@
+.modal-contact {
+  width: calc(100vw - 40px);
+  max-width: 272px;
+  padding: 28px 16px;
+  min-height: 380px;
+}
+@media screen and (min-width: 768px) {
+  .modal-contact {
+    max-width: 480px;
+    padding: 48px 32px;
+  }
+}
+.modal-contact-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 768px) {
+  .modal-contact-title {
+    font-size: 32px;
+    line-height: calc(39 / 32);
+    margin-bottom: 24px;
+  }
+}
+.modal-contact-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  color: #5c5c5c;
+  margin-bottom: 18px;
+}
+@media screen and (min-width: 768px) {
+  .modal-contact-text {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    margin-bottom: 32px;
+  }
+}
+.modal-contact-form {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .modal-contact-form {
+    margin-bottom: 38px;
+  }
+}
+
+.modal-contact-label {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  font-weight: 500;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  color: #5c5c5c;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-contact-label {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    margin-bottom: 24px;
+  }
+}
+
+.modal-contact-field {
+  width: 100%;
+  height: 35px;
+  padding: 10px 12px;
+  outline: none;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .modal-contact-field {
+    height: 49px;
+    padding: 16px;
+  }
+}
+
+.modal-contact-field:focus {
+  border-color: rgba(17, 17, 17, 0.7);
+}
+
+.modal-contact-field::placeholder {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+
+  color: rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 768px) {
+  .modal-contact-field::placeholder {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
+
+.modal-contact-field:not(:placeholder-shown):required:valid {
+  border-color: green;
+}
+
+.modal-contact-field:not(:placeholder-shown):required:invalid {
+  border-color: red;
+}
+
+/* "Thank u" modal style*/
+
+.modal-thnku {
+  width: calc(100vw - 40px);
+  max-width: 272px;
+  padding: 44px 16px 32px 16px;
+  min-height: 357px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .modal-thnku {
+    max-width: 480px;
+    min-height: 505px;
+    padding: 54px 32px;
+  }
+}
+.modal-thnku-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 768px) {
+  .modal-thnku-title {
+    font-size: 32px;
+    line-height: calc(39 / 32);
+    margin-bottom: 16px;
+  }
+}
+.modal-thnku-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  margin-bottom: 18px;
+}
+@media screen and (min-width: 768px) {
+  .modal-thnku-text {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    margin-bottom: 34px;
+  }
+}
+.modal-thnk-content-icon {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .modal-thnk-content-icon {
+    width: 367px;
+    height: 202px;
+  }
+}
