@@ -198,6 +198,14 @@
   border-color: red;
 }
 
+.modal-sub-mail-field:not(:placeholder-shown):required:valid + svg {
+  opacity: 1;
+}
+
+.modal-sub-mail-field:not(:placeholder-shown):required:invalid + svg + svg {
+  opacity: 1;
+}
+
 .modal-icon-invalid {
   width: 20px;
   height: 20px;
@@ -215,7 +223,22 @@
   right: 16px;
   bottom: 14px;
 }
+.modal-icon-invalid-sub {
+  opacity: 0;
+  width: 16px;
+  height: 16px;
 
-.my-slick-next {
-  transform: rotate(180deg);
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
+}
+
+.modal-icon-valid-sub {
+  opacity: 0;
+  width: 16px;
+  height: 16px;
+
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
 }
