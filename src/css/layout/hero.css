@@ -228,6 +228,7 @@
 
 /* btn-txt + btn-arrow  */
 
+
 [href="./img/icons/sprite.svg#btn-txt"] {
     transform-origin: center;
     animation: infinity-rotate 30s linear 4s infinite;
