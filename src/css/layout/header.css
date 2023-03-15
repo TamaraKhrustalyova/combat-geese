@@ -231,6 +231,7 @@ html {
   .page-header{
     position: relative;
     padding-top: 16px;
+    padding-bottom: 44px;
   }
   .header{
     max-width: none;
@@ -332,6 +333,7 @@ html {
   .page-header{
     position: relative;
     padding-top: 16px;
+    padding-bottom: 44px;
   }
 
   .menu-link{
