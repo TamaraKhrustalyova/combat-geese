@@ -15,7 +15,7 @@ html {
   position: absolute;
   width: 100%;
   z-index: 99;
-  padding-top: 28px;
+  /*padding-top: 28px;*/
 }
 .page-nav{
   display: flex;
@@ -31,6 +31,12 @@ html {
   align-items: center;
 }
 @media screen  and (min-width: 767px) {
+  .menu{
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+  }
+
   .menu-link{
     font-weight: 400;
     font-size: 20px;
@@ -97,7 +103,7 @@ html {
 
 @media screen  and (min-width: 480px) {
   .page-header{
-    padding-top: 16px;
+    /*padding-top: 16px;*/
   }
   .menu-link{
     font-weight: 400;
@@ -168,9 +174,24 @@ html {
     fill: var(--dark-cl);
   }
 }
-@media screen and (min-width: 768px)and (max-width: 1280px){
+/*@media screen and (max-width: 769px){
+  .logo {
+    margin-right: 80px;
+    margin-left: 0px;
+}
+}*/
+@media screen and (min-width: 768px) and (max-width: 1280px){
   .page-header{
-    padding-top: 24px;
+    /*padding-top: 24px;*/
+  }
+  .logo {
+    margin-right: auto;
+    margin-left: 0px;
+    fill: var(--light-cl);
+  }
+  .header{
+    max-width: none;
+    justify-content: center;
   }
   .menu-link{
     font-weight: 400;
@@ -182,11 +203,6 @@ html {
     /*color: var(--dark-cl);*/
     animation: move-vertical 1000ms ease-out 1000ms both;
   }
-  .logo{
-    margin-right: 80px;
-    margin-left: 0;
-    fill: var(--light-cl);
-  }
   .logo-img{
     fill: var(--dark-cl);
   }
@@ -196,18 +212,28 @@ html {
   }
   .call{
     margin-right: 0;
+    margin-left: auto;
     fill: var(--dark-cl);
+    margin-right: 24px;
   }
   .page-nav {
     padding-top: 11px;
     fill: var(--dark-cl);
   }
+  .menu{
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+  }
 
 }
 
-@media screen and (min-width: 480px)and (max-width: 767px){
+@media screen and (min-width: 480px) and (max-width: 767px){
   .page-header{
     padding-top: 16px;
+  }
+  .header{
+    max-width: none;
   }
 
   .mobile-navigation{
