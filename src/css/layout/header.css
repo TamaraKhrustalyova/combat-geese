@@ -182,6 +182,7 @@ html {
 }*/
 @media screen and (min-width: 768px) and (max-width: 1280px){
   .page-header{
+    position: inherit;
     /*padding-top: 24px;*/
   }
   .logo {
@@ -230,6 +231,7 @@ html {
 
 @media screen and (min-width: 480px) and (max-width: 767px){
   .page-header{
+    position: inherit;
     padding-top: 16px;
   }
   .header{
@@ -330,6 +332,7 @@ html {
 
 @media screen and (min-width: 320px) and (max-width: 479px){
   .page-header{
+    position: inherit;
     padding-top: 16px;
   }
 
