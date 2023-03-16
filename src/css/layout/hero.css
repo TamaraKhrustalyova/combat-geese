@@ -245,8 +245,8 @@
   transition: transform 500ms ease-out;
 }
 
-.hero-btn:hover [href='./img/icons/sprite.svg#btn-arrow'],
-.hero-btn:focus [href='./img/icons/sprite.svg#btn-arrow'] {
+.hero-btn:hover .hero-icon-arrow-anim,
+.hero-btn:focus .hero-icon-arrow-anim {
   transform: rotate(-122deg);
 }
 
