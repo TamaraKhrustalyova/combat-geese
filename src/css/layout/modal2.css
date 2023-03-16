@@ -207,22 +207,41 @@
 }
 
 .modal-icon-invalid {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 
   position: absolute;
   right: 16px;
-  bottom: 14px;
+  bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-icon-invalid {
+    width: 20px;
+    height: 20px;
+    right: 16px;
+    bottom: 14px;
+  }
 }
 
 .modal-icon-valid {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 
   position: absolute;
   right: 16px;
-  bottom: 14px;
+  bottom: 10px;
 }
+
+@media screen and (min-width: 768px) {
+  .modal-icon-valid {
+    width: 20px;
+    height: 20px;
+    right: 16px;
+    bottom: 14px;
+  }
+}
+
 .modal-icon-invalid-sub {
   opacity: 0;
   width: 16px;
